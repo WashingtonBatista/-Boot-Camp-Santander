@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <p>Stretch</p>
+    <div class="container stretch">
+        <class class="item">A terra é um bem comum</class>
+        <class class="item">A terra é um bem comum
+            Que pertence a cada um</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem comum
+            Que pertence a cada um.
+            Com o seu poder além,
+            Deus fez a grande Natura
+            Mas não passou escritura
+            Da terra para ninguém.</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem</class>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <class class="item">A terra é um bem comum</class>
+        <class class="item">A terra é um bem comum
+            Que pertence a cada um</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem comum
+            Que pertence a cada um.
+            Com o seu poder além,
+            Deus fez a grande Natura
+            Mas não passou escritura
+            Da terra para ninguém.</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem</class>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container stretch flex-start">
+        <class class="item">A terra é um bem comum</class>
+        <class class="item">A terra é um bem comum
+            Que pertence a cada um</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem comum
+            Que pertence a cada um.
+            Com o seu poder além,
+            Deus fez a grande Natura
+            Mas não passou escritura
+            Da terra para ninguém.</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem</class>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <class class="item">A terra é um bem comum</class>
+        <class class="item">A terra é um bem comum
+            Que pertence a cada um</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem comum
+            Que pertence a cada um.
+            Com o seu poder além,
+            Deus fez a grande Natura
+            Mas não passou escritura
+            Da terra para ninguém.</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem</class>
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <class class="item">A terra é um bem comum</class>
+        <class class="item">A terra é um bem comum
+            Que pertence a cada um</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem comum
+            Que pertence a cada um.
+            Com o seu poder além,
+            Deus fez a grande Natura
+            Mas não passou escritura
+            Da terra para ninguém.</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem</class>
+    </div>
+    
+    <p>space-around</p>
+    <div class="container space-around">
+        <class class="item">A terra é um bem comum</class>
+        <class class="item">A terra é um bem comum
+            Que pertence a cada um</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem comum
+            Que pertence a cada um.
+            Com o seu poder além,
+            Deus fez a grande Natura
+            Mas não passou escritura
+            Da terra para ninguém.</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem</class>
+        <class class="item">A terra é um bem</class>
+    </div>
+</body>
+</html>
